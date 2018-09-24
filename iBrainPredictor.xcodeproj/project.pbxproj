@@ -12,6 +12,8 @@
 		586C8DE62158906A000487BF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 586C8DE42158906A000487BF /* Main.storyboard */; };
 		586C8DE82158906E000487BF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 586C8DE72158906E000487BF /* Assets.xcassets */; };
 		586C8DEB2158906E000487BF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 586C8DE92158906E000487BF /* LaunchScreen.storyboard */; };
+		5874B94C2158D3C6008EF58E /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5874B94B2158D3C5008EF58E /* CustomButton.swift */; };
+		5874B94E2158D41C008EF58E /* Checkbox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5874B94D2158D41C008EF58E /* Checkbox.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		586C8DE72158906E000487BF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		586C8DEA2158906E000487BF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		586C8DEC2158906E000487BF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5874B94B2158D3C5008EF58E /* CustomButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
+		5874B94D2158D41C008EF58E /* Checkbox.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Checkbox.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +60,8 @@
 			children = (
 				586C8DE02158906A000487BF /* AppDelegate.swift */,
 				586C8DE22158906A000487BF /* ViewController.swift */,
+				5874B94D2158D41C008EF58E /* Checkbox.swift */,
+				5874B94B2158D3C5008EF58E /* CustomButton.swift */,
 				586C8DE42158906A000487BF /* Main.storyboard */,
 				586C8DE72158906E000487BF /* Assets.xcassets */,
 				586C8DE92158906E000487BF /* LaunchScreen.storyboard */,
@@ -135,8 +141,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5874B94E2158D41C008EF58E /* Checkbox.swift in Sources */,
 				586C8DE32158906A000487BF /* ViewController.swift in Sources */,
 				586C8DE12158906A000487BF /* AppDelegate.swift in Sources */,
+				5874B94C2158D3C6008EF58E /* CustomButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
