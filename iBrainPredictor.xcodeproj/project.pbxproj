@@ -26,6 +26,7 @@
 		586C8DEC2158906E000487BF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5874B94B2158D3C5008EF58E /* CustomButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
 		5874B94D2158D41C008EF58E /* Checkbox.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Checkbox.swift; sourceTree = "<group>"; };
+		5874B94F2158E57F008EF58E /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,6 +43,7 @@
 		586C8DD421589069000487BF = {
 			isa = PBXGroup;
 			children = (
+				5874B94F2158E57F008EF58E /* README.md */,
 				586C8DDF2158906A000487BF /* iBrainPredictor */,
 				586C8DDE2158906A000487BF /* Products */,
 			);
