@@ -40,7 +40,7 @@ class ViewController: UIViewController {
             
             let lbl: UILabel = UILabel(frame: CGRect(x: x+30, y:y, width:100, height:20))
             lbl.text = title
-            lbl.font = UIFont.systemFont(ofSize: 9)
+            lbl.font = UIFont.systemFont(ofSize: 12)
             self.view.addSubview(lbl)
 
             cbarray.append(btn)
@@ -49,12 +49,68 @@ class ViewController: UIViewController {
         
         
     }
-    @IBAction func calcButton(_ sender : Any) {
+    @IBAction func calcButton(_ sender : Any)
+    {
 
         var s_stroke = 0
         var s_LVO = 0
         var s_ICH = 0
         var s_SAH = 0
+        var i=0
+        for cb in cbarray
+        {
+            if(cb.isChecked)
+            {
+                s_stroke += risk_stroke[i]
+                s_LVO += risk_LVO[i]
+                s_ICH += risk_ICH[i]
+                s_SAH += risk_SAH[i]
+            }
+            i += 1
+        }
+        var str: String  = ""
+        switch(s_stroke)
+        {
+        case 1: str = "36%"
+        case 2:  str = "61%"
+        case 3: str = "71%"
+        default: if(s_stroke<=0) { str="14%" }
+        else { str="88%" }
+        }
+        strokeField.text = str
+
+        str=""
+        switch(s_LVO)
+        {
+        case 0...3: str = "4%"
+        case 4...6:  str = "18%"
+        case 7: str = "49%"
+        default: if(s_LVO <= -1) { str="0%" }
+        else { str="79%" }
+        }
+        LVOField.text = str
+
+        str=""
+        switch(s_ICH)
+        {
+        case -1...2: str = "8%"
+        case 3...4:  str = "23%"
+        case 5...6: str = "42%"
+        default: if(s_ICH <= -2) { str="3%" }
+        else { str="65%" }
+        }
+        ICHField.text = str
+
+        str=""
+        switch(s_SAH)
+        {
+        case -2...2: str = "1%"
+        case 3...4:  str = "10%"
+        case 5...6: str = "30%"
+        default: if(s_SAH <= -3) { str="0%" }
+        else { str="89%" }
+        }
+        SAHField.text = str
     }
 
 }
