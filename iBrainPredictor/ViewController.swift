@@ -36,6 +36,7 @@ class ViewController: UIViewController {
             let y = 70 + (i / 2) * 30
             let btn: Checkbox = Checkbox(frame: CGRect(x: x, y: y, width: 20, height: 20))
             btn.checkmarkStyle = Checkbox.CheckmarkStyle.tick
+            btn.checkmarkSize = 0.7
             self.view.addSubview(btn)
 
             let lbl: UILabel = UILabel(frame: CGRect(x: x + 30, y: y, width: 100, height: 20))
